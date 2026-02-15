@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Ishwari | Internship Portfolio</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Poppins',sans-serif;
+}
+
+html{
+  scroll-behavior:smooth;
+}
+
+body{
+  background:linear-gradient(-45deg,#12001f,#2b004a,#3d0066,#1a0033);
+  background-size:400% 400%;
+  animation:gradientMove 12s ease infinite;
+  color:white;
+}
+
+@keyframes gradientMove{
+  0%{background-position:0% 50%;}
+  50%{background-position:100% 50%;}
+  100%{background-position:0% 50%;}
+}
+
+/* NAVBAR */
+
+nav{
+  position:fixed;
+  width:100%;
+  top:0;
+  display:flex;
+  justify-content:space-between;
+  padding:15px 8%;
+  background:rgba(0,0,0,0.6);
+  backdrop-filter:blur(10px);
+  z-index:1000;
+}
+
+nav h2{
+  color:#e0b3ff;
+}
+
+nav a{
+  color:white;
+  text-decoration:none;
+  margin-left:20px;
+  font-size:14px;
+}
+
+nav a:hover{
+  color:#ff00c8;
+}
+
+/* HERO */
+
+.hero{
+  height:100vh;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  padding:20px;
+}
+
+.hero h1{
+  font-size:45px;
+  background:linear-gradient(45deg,#c471f5,#fa71cd);
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+  margin-bottom:15px;
+}
+
+.hero p{
+  max-width:600px;
+  color:#ccc;
+  margin-bottom:25px;
+}
+
+.main-btn{
+  padding:12px 28px;
+  background:linear-gradient(45deg,#a100ff,#ff00c8);
+  color:white;
+  text-decoration:none;
+  border-radius:30px;
+  transition:0.3s;
+  margin:5px;
+}
+
+.main-btn:hover{
+  transform:scale(1.1);
+}
+
+/* SECTION */
+
+.projects{
+  padding:100px 8%;
+}
+
+.projects h2{
+  text-align:center;
+  font-size:32px;
+  margin-bottom:50px;
+}
+
+.project-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  gap:30px;
+}
+
+.card{
+  background:rgba(255,255,255,0.05);
+  backdrop-filter:blur(12px);
+  padding:25px;
+  border-radius:18px;
+  border:1px solid rgba(255,255,255,0.1);
+  transition:0.4s;
+  opacity:0;
+  transform:translateY(40px);
+}
+
+.card.show{
+  opacity:1;
+  transform:translateY(0);
+}
+
+.card:hover{
+  transform:translateY(-10px);
+  box-shadow:0 0 25px rgba(155,0,255,0.5);
+}
+
+.card h3{
+  color:#e0b3ff;
+  margin-bottom:12px;
+}
+
+.card p{
+  color:#ddd;
+  font-size:14px;
+  margin-bottom:18px;
+}
+
+.btn{
+  display:inline-block;
+  padding:8px 16px;
+  border-radius:8px;
+  text-decoration:none;
+  font-size:13px;
+  background:linear-gradient(45deg,#a100ff,#ff00c8);
+  color:white;
+  transition:0.3s;
+}
+
+.btn:hover{
+  transform:scale(1.08);
+}
+
+/* CONTACT */
+
+.contact{
+  text-align:center;
+  padding:60px 20px;
+  background:rgba(0,0,0,0.4);
+}
+
+footer{
+  text-align:center;
+  padding:20px;
+  background:#000;
+  font-size:14px;
+}
+
+</style>
+</head>
+
+<body>
+
+<nav>
+  <h2>Ishwari </h2>
+  <div>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <h1>Ishwari Thombare </h1>
+  <p>
+    Frontend Developer & Automation Specialist at CodeLine AI Internship Program.
+    Passionate about building smart digital solutions.
+  </p>
+  <a href="#projects" class="main-btn">Explore My Projects</a>
+</section>
+<!-- ABOUT SECTION -->
+<section class="projects" id="about">
+  <h2>About Me 👩‍💻</h2>
+
+  <div class="project-grid">
+    <div class="card">
+      <h3>Who Am I?</h3>
+      <p>
+        I am Ishwari Thombare, a passionate Frontend Developer currently 
+        interning at CodeLine AI under ASTERISC TECHNOCRAT PVT. LTD.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>My Focus</h3>
+      <p>
+        I specialize in building responsive websites, automation systems 
+        using Google Apps Script, and modern UI designs with clean structure.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>My Goal</h3>
+      <p>
+        To become a skilled full-stack developer capable of building 
+        scalable and intelligent digital solutions.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS SECTION -->
+<section class="projects" id="skills">
+  <h2>My Skills 🚀</h2>
+
+  <div class="project-grid">
+
+    <div class="card">
+      <h3>Frontend Development</h3>
+      <p>HTML, CSS, Responsive Design, UI Styling</p>
+    </div>
+
+    <div class="card">
+      <h3>JavaScript</h3>
+      <p>DOM Manipulation, Form Validation, Interactive UI Logic</p>
+    </div>
+
+    <div class="card">
+      <h3>Automation</h3>
+      <p>Google Apps Script, Email Automation, PDF Generation</p>
+    </div>
+
+    <div class="card">
+      <h3>Tools</h3>
+      <p>VS Code, Netlify Deployment, GitHub, Canva</p>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- PROJECTS -->
+<section class="projects" id="projects">
+  <h2>My Internship Projects 🚀</h2>
+
+  <div class="project-grid">
+
+    <div class="card">
+      <h3>Registration Form with Email & PDF System</h3>
+      <p>Complete automation using Google Apps Script with PDF generation & email confirmation.</p>
+      <a href="https://internshipsite1234567.netlify.app/" target="_blank" class="btn">View Project</a>
+    </div>
+
+    <div class="card">
+      <h3>Canva & Poster Design</h3>
+      <p>Creative design project focused on branding and digital poster creation.</p>
+      <a href="https://drive.google.com/drive/folders/1ZUUEP1dw_7FzY2MJxYn1Us8omiyks59s?usp=drive_link" target="_blank" class="btn">View Project</a>
+    </div>
+
+    <div class="card">
+      <h3>Templates & Instagram Post Design</h3>
+      <p>Professional social media templates designed for engagement & brand identity.</p>
+      <a href="https://drive.google.com/drive/folders/1WiJvQiIGcFs8RNOOjHfOABCZz0ZafJ9W?usp=drive_link" target="_blank" class="btn">View Project</a>
+    </div>
+
+    <div class="card">
+      <h3>Content Card UI Design</h3>
+      <p>Modern UI content cards with glassmorphism and hover animation.</p>
+      <a href="https://drive.google.com/drive/folders/1WiJvQiIGcFs8RNOOjHfOABCZz0ZafJ9W?usp=drive_link" target="_blank" class="btn">View Project</a>
+    </div>
+
+    <div class="card">
+      <h3>Intern Registration Form</h3>
+      <p>S project for CodeLine AI Internship Program.</p>
+      <a href="https://ishu-form.netlify.app/" target="_blank" class="btn">View Project</a>
+    </div>
+
+   
+    <div class="card">
+  <h3>Rock-Paper-Sizzer-Game 🎮</h3>
+  <p>
+    A fun and interactive browser-based game developed using 
+    HTML, CSS and JavaScript with responsive design and dynamic logic.
+  </p>
+  <a href="https://rockpapersizzer.netlify.app/" target="_blank" class="btn">
+    Play Game
+  </a>
+</div>
+
+<div class="card">
+  <h3> Tic-Tac-Toe-Game 🎮</h3>
+  <p>
+    A fun and interactive browser-based game developed using 
+    HTML, CSS and JavaScript with responsive design and dynamic logic.
+  </p>
+  <a href="https://crossingbox.netlify.app/" target="_blank" class="btn">
+    Play Game
+  </a>
+</div>
+
+
+  </div>
+</section>
+<section class="contact" id="contact">
+  <h2>Let's Connect 💬</h2>
+
+  <p>
+    Email:
+    <a href="mailto:thombareishwari39@gmail.com">
+      thombareishwari39@gmail.com
+    </a>
+  </p>
+
+  <p>Location: Nagpur, Maharashtra</p>
+</section>
+
+
+<footer>
+  © 2026 Ishwari Thombare | CodeLine AI Internship Portfolio
+</footer>
+
+<script>
+const cards = document.querySelectorAll('.card');
+window.addEventListener('scroll',()=>{
+  cards.forEach(card=>{
+    const top = card.getBoundingClientRect().top;
+    if(top < window.innerHeight - 100){
+      card.classList.add('show');
+    }
+  });
+});
+</script>
+
+</body>
+</html>
